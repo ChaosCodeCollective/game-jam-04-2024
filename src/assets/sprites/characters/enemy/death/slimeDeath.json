@@ -1,0 +1,55 @@
+{"frames": {
+
+"slime-20.png":
+{
+	"frame": {"x":1,"y":28,"w":16,"h":16},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":9,"w":16,"h":16},
+	"sourceSize": {"w":32,"h":32}
+},
+"slime-21.png":
+{
+	"frame": {"x":1,"y":11,"w":15,"h":21},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":4,"w":15,"h":21},
+	"sourceSize": {"w":32,"h":32}
+},
+"slime-22.png":
+{
+	"frame": {"x":1,"y":46,"w":16,"h":22},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":2,"w":16,"h":22},
+	"sourceSize": {"w":32,"h":32}
+},
+"slime-23.png":
+{
+	"frame": {"x":1,"y":64,"w":19,"h":20},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":5,"w":19,"h":20},
+	"sourceSize": {"w":32,"h":32}
+},
+"slime-24.png":
+{
+	"frame": {"x":1,"y":1,"w":20,"h":8},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":17,"w":20,"h":8},
+	"sourceSize": {"w":32,"h":32}
+}},
+"animations": {
+	"slime": ["slime-20.png","slime-21.png","slime-22.png","slime-23.png","slime-24.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.1",
+	"image": "slimeDeath.png",
+	"format": "RGBA8888",
+	"size": {"w":24,"h":84},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:6aa602210d8d4f9e385eb6918a2c3ba7:811499de0f35aad3f228d139bb939e07:947114ef783f080f94d524f8cce49958$"
+}
+}
