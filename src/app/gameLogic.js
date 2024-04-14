@@ -10,3 +10,4 @@ function testForCollision(object1, object2)
             && bounds1.y + bounds1.height > bounds2.y
         );
     }
+function enemyHit(enemy) {}
