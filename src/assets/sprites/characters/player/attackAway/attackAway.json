@@ -1,0 +1,47 @@
+{"frames": {
+
+"player-44.png":
+{
+	"frame": {"x":50,"y":1,"w":19,"h":22},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":17,"y":22,"w":19,"h":22},
+	"sourceSize": {"w":48,"h":48}
+},
+"player-45.png":
+{
+	"frame": {"x":1,"y":1,"w":24,"h":23},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":21,"w":24,"h":23},
+	"sourceSize": {"w":48,"h":48}
+},
+"player-46.png":
+{
+	"frame": {"x":27,"y":1,"w":21,"h":22},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":22,"w":21,"h":22},
+	"sourceSize": {"w":48,"h":48}
+},
+"player-47.png":
+{
+	"frame": {"x":71,"y":1,"w":15,"h":21},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":17,"y":23,"w":15,"h":21},
+	"sourceSize": {"w":48,"h":48}
+}},
+"animations": {
+	"player": ["player-44.png","player-45.png","player-46.png","player-47.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.1",
+	"image": "attackAway.png",
+	"format": "RGBA8888",
+	"size": {"w":87,"h":25},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:8a7faac2b760fc286d15bbe6657301a7:dda8c9cc4f87758e0c4a4947248b062c:48e252ea2ea3d0ab1839090c207d20f5$"
+}
+}

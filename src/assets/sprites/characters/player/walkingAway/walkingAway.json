@@ -1,0 +1,63 @@
+{"frames": {
+
+"player-30.png":
+{
+	"frame": {"x":0,"y":0,"w":15,"h":24},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":17,"y":20,"w":15,"h":24},
+	"sourceSize": {"w":48,"h":48}
+},
+"player-31.png":
+{
+	"frame": {"x":0,"y":48,"w":15,"h":23},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":17,"y":21,"w":15,"h":23},
+	"sourceSize": {"w":48,"h":48}
+},
+"player-32.png":
+{
+	"frame": {"x":0,"y":94,"w":15,"h":22},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":17,"y":22,"w":15,"h":22},
+	"sourceSize": {"w":48,"h":48}
+},
+"player-33.png":
+{
+	"frame": {"x":0,"y":24,"w":15,"h":24},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":17,"y":20,"w":15,"h":24},
+	"sourceSize": {"w":48,"h":48}
+},
+"player-34.png":
+{
+	"frame": {"x":0,"y":71,"w":15,"h":23},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":17,"y":21,"w":15,"h":23},
+	"sourceSize": {"w":48,"h":48}
+},
+"player-35.png":
+{
+	"frame": {"x":0,"y":116,"w":15,"h":22},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":17,"y":22,"w":15,"h":22},
+	"sourceSize": {"w":48,"h":48}
+}},
+"animations": {
+	"player": ["player-30.png","player-31.png","player-32.png","player-33.png","player-34.png","player-35.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.1",
+	"image": "walkingAway.png",
+	"format": "RGBA8888",
+	"size": {"w":15,"h":138},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:926739d66c1924eba76d5b0965107350:92939dec98ed60f366fff8f4ed5c6b67:b3fedb1af737f7cf6461a5babf0ce1c0$"
+}
+}

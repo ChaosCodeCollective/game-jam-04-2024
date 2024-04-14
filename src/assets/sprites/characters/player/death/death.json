@@ -1,0 +1,39 @@
+{"frames": {
+
+"player-48.png":
+{
+	"frame": {"x":1,"y":18,"w":18,"h":20},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":17,"y":24,"w":18,"h":20},
+	"sourceSize": {"w":48,"h":48}
+},
+"player-49.png":
+{
+	"frame": {"x":1,"y":38,"w":19,"h":18},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":17,"y":26,"w":19,"h":18},
+	"sourceSize": {"w":48,"h":48}
+},
+"player-50.png":
+{
+	"frame": {"x":1,"y":1,"w":23,"h":15},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":16,"y":29,"w":23,"h":15},
+	"sourceSize": {"w":48,"h":48}
+}},
+"animations": {
+	"player": ["player-48.png","player-49.png","player-50.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.1",
+	"image": "death.png",
+	"format": "RGBA8888",
+	"size": {"w":25,"h":57},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:3c1c708945a5dd19c90b83a0a620bc1c:a12bf34628af9b8378274f18df11818b:572aa1586ae03ed41df9ba84da44551f$"
+}
+}
