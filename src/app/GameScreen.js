@@ -3,8 +3,8 @@
 import React, { useEffect, useRef } from "react";
 import * as PIXI from "pixi.js";
 import { Application, Assets, AnimatedSprite, Texture } from 'pixi.js';
-const playerPng = '../assets/sprites/characters/player/walkingRight/walkingRight.png'
-const playerData = '../assets/sprites/characters/player/walkingRight/walkingRight.json'
+const playerPng = '../assets/sprites/characters/player/runningRight/runRight.png'
+const playerData = '../assets/sprites/characters/player/runningRight/runRight.json'
 export default function Snake() {
   const container = useRef(null);
   const app = useRef(null);
@@ -14,7 +14,7 @@ export default function Snake() {
     const app = new Application();
 
     // Initialize the application
-    await app.init({ background: '#1099bb', resizeTo: window });
+    await app.init({ background: '#1099bb', width: 600, height: 600 });
         // Append the application canvas to the document body
         document.body.appendChild(app.canvas);
 
@@ -23,7 +23,7 @@ export default function Snake() {
     // Create an array of textures from the sprite sheet
     const frames = [];
 
-    for (let i = 6; i < 11; i++)
+    for (let i = 24; i < 29; i++)
     {
         const val = `player-${i}.png`
         console.log(val)
@@ -51,7 +51,7 @@ export default function Snake() {
       // test code ends here
 
 
-      return () => app.current = null;
+      return () => (app.current = null);
     })();
   }); // Dependency on container.current to reinitialize if needed
 
