@@ -1,0 +1,47 @@
+{"frames": {
+
+"player-36.png":
+{
+	"frame": {"x":24,"y":1,"w":18,"h":22},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":22,"w":18,"h":22},
+	"sourceSize": {"w":48,"h":48}
+},
+"player-37.png":
+{
+	"frame": {"x":24,"y":21,"w":22,"h":27},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":16,"y":21,"w":22,"h":27},
+	"sourceSize": {"w":48,"h":48}
+},
+"player-38.png":
+{
+	"frame": {"x":1,"y":18,"w":21,"h":23},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":17,"y":22,"w":21,"h":23},
+	"sourceSize": {"w":48,"h":48}
+},
+"player-39.png":
+{
+	"frame": {"x":1,"y":1,"w":15,"h":21},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":17,"y":23,"w":15,"h":21},
+	"sourceSize": {"w":48,"h":48}
+}},
+"animations": {
+	"player": ["player-36.png","player-37.png","player-38.png","player-39.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.1",
+	"image": "attackFacing.png",
+	"format": "RGBA8888",
+	"size": {"w":52,"h":44},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:1f43db695d6326f1969ed622b327a566:5500f9373d8b7f5eb55c908c878a3137:4514c147117be21e5c1a4af987d6c405$"
+}
+}

@@ -1,0 +1,47 @@
+{"frames": {
+
+"slime-0.png":
+{
+	"frame": {"x":1,"y":1,"w":18,"h":14},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":11,"w":18,"h":14},
+	"sourceSize": {"w":32,"h":32}
+},
+"slime-1.png":
+{
+	"frame": {"x":1,"y":17,"w":18,"h":14},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":11,"w":18,"h":14},
+	"sourceSize": {"w":32,"h":32}
+},
+"slime-2.png":
+{
+	"frame": {"x":1,"y":33,"w":18,"h":13},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":12,"w":18,"h":13},
+	"sourceSize": {"w":32,"h":32}
+},
+"slime-3.png":
+{
+	"frame": {"x":1,"y":48,"w":18,"h":13},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":12,"w":18,"h":13},
+	"sourceSize": {"w":32,"h":32}
+}},
+"animations": {
+	"slime": ["slime-0.png","slime-1.png","slime-2.png","slime-3.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.1",
+	"image": "slimeStanding.png",
+	"format": "RGBA8888",
+	"size": {"w":20,"h":62},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:88d50f08e164f5d7ae9a3e19f3cf3a0f:d29fb5a3e395e09fa4663e4e8a066812:894722f31577bcbbd61c1fe0a97dca81$"
+}
+}
