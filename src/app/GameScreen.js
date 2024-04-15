@@ -35,13 +35,14 @@ const slimeWalkData = '../assets/sprites/characters/enemy/walkRight/slimeWalkRig
 export default function Snake() {
   const container = useRef(null);
   const app = useRef(null);
+  const anim = useRef(null)
 
   useEffect(() => {
     (async () => {
     const app = new Application();
 
     // Initialize the application
-    await app.init({ background: '#1099bb', resizeTo: window });
+    await app.init({ background: '#1099bb', width: 600, height: 600 });
         // Append the application canvas to the document body
         document.body.appendChild(app.canvas);
 
@@ -49,6 +50,7 @@ export default function Snake() {
     await Assets.load(attackFacingData);
     // Create an array of textures from the sprite sheet
     const frames = [];
+    const playerxy = {x: 300, y: 300}
 
     for (let i = 36; i < 39; i++)
     {
@@ -60,28 +62,52 @@ export default function Snake() {
     }
 
     // Create an AnimatedSprite (brings back memories from the days of Flash, right ?)
-    const anim = new AnimatedSprite(frames);
+    anim.current = new AnimatedSprite(frames);
 
     /*
      * An AnimatedSprite inherits all the properties of a PIXI sprite
      * so you can change its position, its anchor, mask it, etc
      */
-    anim.x = app.screen.width / 2;
-    anim.y = app.screen.height / 2;
-    anim.anchor.set(0.5);
-    anim.animationSpeed = 0.1;
-    anim.play();
+    anim.current.x = app.screen.width / 2;
+    anim.current.y = app.screen.height / 2;
+    anim.current.anchor.set(0.5);
+    anim.current.animationSpeed = 0.1;
+    anim.current.play();
 
-    app.stage.addChild(anim);
+    app.stage.addChild(anim.current);
 
     // Animate the rotation
       // test code ends here
 
 
-      return () => app.current = null;
+  window.addEventListener("keydown", onKeyDown);
+      return () => {
+        app.current = null
+        window.removeEventListener("keydown", onKeyDown);
+      };
     })();
   }); // Dependency on container.current to reinitialize if needed
 
+  function onKeyDown(e) {
+    switch (e.key) {
+        case "w":
+          console.log("Keypress: W")
+          anim.current.y = anim.current.y - 10;
+            break;
+        case "s":
+          console.log("Keypress: s")
+          anim.current.y = anim.current.y + 10;
+            break;
+        case "a":
+          console.log("Keypress: a")
+          anim.current.x = anim.current.x - 1;
+            break;
+        case "d":
+          console.log("Keypress: d")
+          anim.current.x = anim.current.x + 1;
+            break;
+    }
+}
   return (
     <div ref={container} className="grow m-5 rounded overflow-hidden"></div>
   );
