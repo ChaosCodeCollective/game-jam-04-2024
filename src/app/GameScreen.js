@@ -92,7 +92,6 @@ export default function Snake() {
     switch (e.key) {
         case "w":
           console.log("Keypress: W")
-
           anim.current.y = anim.current.y - 10;
             break;
         case "s":
