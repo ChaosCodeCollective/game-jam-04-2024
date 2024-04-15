@@ -3,8 +3,35 @@
 import React, { useEffect, useRef } from "react";
 import * as PIXI from "pixi.js";
 import { Application, Assets, AnimatedSprite, Texture } from 'pixi.js';
-const playerPng = '../assets/sprites/characters/player/walkingRight/walkingRight.png'
-const playerData = '../assets/sprites/characters/player/walkingRight/walkingRight.json'
+
+
+//player Animation Jsons
+const runData = '../assets/sprites/characters/player/runningRight/runRight.json'
+const attackAwayData = '../assets/sprites/characters/player/attackAway/attackAway.json'
+const attackFacingData = '../assets/sprites/characters/player/attackFacing/attackFacing.json'
+const attackRightData = '../assets/sprites/characters/player/attackRight/attackRight.json'
+const deathData = '../assets/sprites/characters/player/death/death.json'
+const standingAwayData = '../assets/sprites/characters/player/standingAway/standingAway.json'
+const standingFacingData = '../assets/sprites/characters/player/standingFacing/standingFacing.json'
+const walkingAwayData = '../assets/sprites/characters/player/walkingAway/walkingAway.json'
+const WalkingFacingData = '../assets/sprites/characters/player/walkingFacing/walkingFacing.json'
+const standingRightData = '../assets/sprites/characters/player/walkingRight/walkingRight.json'
+
+
+//Slime Animation Jsons
+const slimeDeathData = '../assets/sprites/characters/enemy/death/slimeDeath.json'
+const slimeHitData = '../assets/sprites/characters/enemy/hit/slimeHit.json'
+const slimeRunData = '../assets/sprites/characters/enemy/runRight/slimeHit.json'
+const slimeStandingData = '../assets/sprites/characters/enemy/standing/slimeStanding.json'
+const slimeWalkData = '../assets/sprites/characters/enemy/walkRight/slimeWalkRight.json'
+
+
+
+
+
+
+
+
 export default function Snake() {
   const container = useRef(null);
   const app = useRef(null);
@@ -19,11 +46,11 @@ export default function Snake() {
         document.body.appendChild(app.canvas);
 
 
-    await Assets.load(playerData);
+    await Assets.load(attackFacingData);
     // Create an array of textures from the sprite sheet
     const frames = [];
 
-    for (let i = 6; i < 11; i++)
+    for (let i = 36; i < 39; i++)
     {
         const val = `player-${i}.png`
         console.log(val)
@@ -42,7 +69,7 @@ export default function Snake() {
     anim.x = app.screen.width / 2;
     anim.y = app.screen.height / 2;
     anim.anchor.set(0.5);
-    anim.animationSpeed = 0.5;
+    anim.animationSpeed = 0.1;
     anim.play();
 
     app.stage.addChild(anim);
