@@ -54,7 +54,8 @@ async function createFrame(data, start, end,character = 'player') {
 export default function Snake() {
   const container = useRef(null);
   const app = useRef(null);
-  var anim;
+
+   const anim = useRef(null)
   useEffect(() => {
     (async () => {
       const app = new Application();
@@ -141,11 +142,34 @@ export default function Snake() {
 
       // Animate the rotation
       // test code ends here
-
-      return () => (app.current = null);
+  window.addEventListener("keydown", onKeyDown);
+      return () => {
+        app.current = null
+        window.removeEventListener("keydown", onKeyDown);
+      };
     })();
   }); // Dependency on container.current to reinitialize if needed
 
+  function onKeyDown(e) {
+    switch (e.key) {
+        case "w":
+          console.log("Keypress: W")
+          anim.current.y = anim.current.y - 10;
+            break;
+        case "s":
+          console.log("Keypress: s")
+          anim.current.y = anim.current.y + 10;
+            break;
+        case "a":
+          console.log("Keypress: a")
+          anim.current.x = anim.current.x - 1;
+            break;
+        case "d":
+          console.log("Keypress: d")
+          anim.current.x = anim.current.x + 1;
+            break;
+    }
+}
   return (
     <div ref={container} className="grow m-5 rounded overflow-hidden"></div>
   );
